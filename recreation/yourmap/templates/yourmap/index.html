@@ -9,9 +9,26 @@
 
 {% block content %}
 
- <div id="mapid"></div>
+<div id="mapid" style="height: 500px"></div>
 
 <script>
-	 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+  function forward() {
+    window.location = "http://de.wikipedia.org/wiki/Busan";
+  }
+
+
+  var mymap = L.map('mapid').setView([51.505, 0.0], 2);
+
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(mymap);
+
+  var marker1 = L.marker([35.5, 129]).addTo(mymap);
+  var marker2 = L.marker([53, -6.3]).addTo(mymap);
+  var marker3 = L.marker([51.5, 13]).addTo(mymap);
+
+  marker1.on('click',forward);
+  marker2.bindPopup(" <a href='http://de.wikipedia.org/wiki/Dublin'>Get some infos about Dublin by clicking this link</a> " )
+  
 </script>
 {% endblock %}
