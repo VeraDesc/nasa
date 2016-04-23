@@ -4,13 +4,13 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
-
+{% block header %}{% endblock %}
 </head>
 <body>
 {% include "chunks/top.html" %}
 {% include "chunks/menu.html" %}
 
-{% block content %}{% endblock %}
+{% block content %}{% endblock %}÷÷
 
 {% include "chunks/footer.html" %}
 </body>
