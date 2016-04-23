@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+</head>
+<body>
+{% include "chunks/top.html" %}
+{% include "chunks/menu.html" %}
+
+{% block content %}{% endblock %}
+
+{% include "chunks/footer.html" %}
+</body>
+</html>
