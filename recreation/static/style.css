@@ -25,9 +25,8 @@ a:hover {
 
 #app-menu ul {
 	list-style: none;
-	display: inline;
-	
-}
+	/*display: inline;*/
+	}
  /*
 #app-menu {
      position: relative;
