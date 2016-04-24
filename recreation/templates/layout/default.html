@@ -7,11 +7,15 @@
 {% block header %}{% endblock %}
 </head>
 <body>
+	<div title>
 {% include "chunks/top.html" %}
+   </div>
+   <div menu>
 {% include "chunks/menu.html" %}
 
 {% block content %}{% endblock %}÷÷
 
 {% include "chunks/footer.html" %}
+	</div>
 </body>
 </html>
