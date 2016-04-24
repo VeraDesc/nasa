@@ -1,5 +1,4 @@
-Nasa Space Apps Challenge 2016
-Journey to Mars / Space Recreation
+Nasa Space Apps Challenge 2016: Journey to Mars / Space Recreation
 
 #WALK THE WORLD
 Take a break. Take a virtual walk on mother earth. 
