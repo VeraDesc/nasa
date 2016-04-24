@@ -27,13 +27,13 @@ The videos show a walk through in nature (or maybe in a city). They should be as
 Our app shows a worldmap with pins on it. Each pin is linked to a video showing a walk through the place where the pin is located. 
 The pins on the worldmap can be set by users: 
 
-** On earth **
+On earth
 1. A user takes a video of a walk through of a place (with sound).
 2. The user uploads the video to youtube or any other platform. 
 3. With our app the user sets a link to the video and geotaggs it (GPS Data of the video).
 4. The video is now pinned on our virtual worlmap at the coordinates of the video.
 
-** In Space **
+In Space
 5. The astronaut clicks on a pin on the worldmap. The link to the video opens.
 6. A random search show
 
