@@ -23,7 +23,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-ul {
+#app-menu ul {
 	list-style: none;
 	display: inline;
 	
