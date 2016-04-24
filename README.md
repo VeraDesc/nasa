@@ -1,12 +1,9 @@
 Nasa Space Apps Challenge 2016
-
-Journey to Mars
-->Space Recreation
+Journey to Mars / Space Recreation
 
 #WALK THE WORLD
-Take a break. Take a virtual walk on mother earth 
-Virtual walks through places on earth 
-
+Take a break. Take a virtual walk on mother earth. 
+ 
 # Summary
 What astronauts might really miss in space is being in nature. With our app they can choose a place on earth and take a virtual walk there. This virtual walk might not only be a distraction from the daily space routines but it also might have profound positive effects on their well being. 
 
