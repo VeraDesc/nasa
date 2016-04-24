@@ -28,14 +28,14 @@ Our app shows a worldmap with pins on it. Each pin is linked to a video showing 
 The pins on the worldmap can be set by users: 
 
 On earth
-1. A user takes a video of a walk through of a place (with sound).
-2. The user uploads the video to youtube or any other platform. 
-3. With our app the user sets a link to the video and geotaggs it (GPS Data of the video).
-4. The video is now pinned on our virtual worlmap at the coordinates of the video.
+- A user takes a video of a walk through of a place (with sound).
+- The user uploads the video to youtube or any other platform. 
+- With our app the user sets a link to the video and geotaggs it (GPS Data of the video).
+- The video is now pinned on our virtual worlmap at the coordinates of the video.
 
 In Space
-5. The astronaut clicks on a pin on the worldmap. The link to the video opens.
-6. A random search show
+- The astronaut clicks on a pin on the worldmap. The link to the video opens.
+- A random search show
 
 #The outcome
 With our app it might soon be possible to take virtual walks through many places on earth. 
