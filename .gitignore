@@ -1,1 +1,2 @@
 *.pyc
+recreation/logs/*.log

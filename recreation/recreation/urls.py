@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.views.generic.base import RedirectView
 #from django.contrib.auth import views as auth_views
 from yourmap import views
 
@@ -24,4 +25,7 @@ urlpatterns = [
     url(r'^yourmap/', include('yourmap.urls')),
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^favicon\.ico$', 
+      RedirectView.as_view(url='/static/favicon/favicon.ico', permanent=True)),
 ]
+# + favicon.urlpatterns
