@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^about/', include('about.urls')),
     url(r'^yourmap/', include('yourmap.urls')),
+    url(r'^relax/', include('relax.urls')),
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^favicon\.ico$', 

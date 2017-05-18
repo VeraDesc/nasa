@@ -2,21 +2,26 @@
 <!doctype html>
 <html>
 <head>
-{% include "chunks/favicon.html" %} 
+{% include "chunks/favicon.html" %}
+
+{% block header %}{% endblock %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
-{% block header %}{% endblock %}
+
 </head>
 <body>
 	<div title>
 {% include "chunks/top.html" %}
    </div>
-   <div menu>
+   <div class="menu">
 {% include "chunks/menu.html" %}
+	</div>
 
+<div id="content">
 {% block content %}{% endblock %}÷÷
+</div>
 
 {% include "chunks/footer.html" %}
-	</div>
+
 </body>
 </html>

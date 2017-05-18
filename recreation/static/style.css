@@ -23,27 +23,42 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* *********************
+ *         MAP         *
+ * ******************* */
+#mapid {}
+#relax #mapid {
+  min-height: 500px;
+  height: 80%;
+}
+ 
+/* *********************
+ *         MENU        *
+ * ******************* */
 #app-menu ul {
 	list-style: none;
-	/*display: inline;*/
+	display: inline;
 	}
- /*
+
 #app-menu {
      position: relative;
      width: 900px;
      margin: 20px auto;
+     border-bottom: solid thin black;
 }
 
 #app-menu ul {
-     position: absolute;
      margin: 0 auto;
      list-style: none;
 }
 
 #app-menu ul li {
-     float: right;
+     float: left;
      margin: 0 0 0 20px;
      color: #00d400;
 }
 
-*/
+#app-menu:after {
+     clear: both;
+}
+

@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'about.apps.AboutConfig',
     'yourmap.apps.YourmapConfig',
+    'relax.apps.RelaxConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
