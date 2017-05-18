@@ -24,8 +24,11 @@ urlpatterns = [
     url(r'^about/', include('about.urls')),
     url(r'^yourmap/', include('yourmap.urls')),
     url(r'^relax/', include('relax.urls')),
-    url(r'^accounts/', include('django.contrib.auth.urls')),
+    url(r'^accounts/', include('allauth.urls')),
     url(r'^admin/', admin.site.urls),
+    
+    url(r'^accounts/profile/', 
+      RedirectView.as_view(url='/yourmap/accounts/profile/', permanent=True)),
     url(r'^favicon\.ico$', 
       RedirectView.as_view(url='/static/favicon/favicon.ico', permanent=True)),
 ]

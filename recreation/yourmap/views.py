@@ -32,3 +32,5 @@ def edit_geotag(request):
 #        question = get_object_or_404(Question, pk=question_id)
 #        return render(request, 'polls/results.html', {'question': question})
 
+def profile(request):
+    return render(request, 'yourmap/profile.html')

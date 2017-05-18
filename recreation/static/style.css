@@ -31,7 +31,14 @@ a:hover {
   min-height: 500px;
   height: 80%;
 }
- 
+/* *********************
+ *         USER        *
+ * *********************/
+.user {    
+    float: right;
+    margin-right: 40%;
+    margin-top: -2em;
+}
 /* *********************
  *         MENU        *
  * ******************* */
