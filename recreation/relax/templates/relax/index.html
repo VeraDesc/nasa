@@ -19,7 +19,12 @@
   }
 
 
-  var mymap = L.map('mapid').setView([51.505, 0.0], 2);
+  var mymap = L.map('mapid').setView([30.505, 20.0], 2);
+  
+  L.tileLayer('https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=2ea36cc4bee644b49ec3886a52cd9e6d',{
+	  maxZoom: 18,
+	  minZoom: 2
+  }).addTo(mymap);
 
  // L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
  // attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -33,4 +38,11 @@
   marker2.bindPopup(" <a href='http://de.wikipedia.org/wiki/Dublin'>Get some infos about Dublin by clicking this link</a> " )
   
 </script>
+
+<div class="attribution">
+<ul>
+<li>Maps &copy; <a href="https://thunderforest.com">Thunderforest</a></li>
+<li>Data &copy; <a href="https://openstreetmap.org">OpenStreetMap contributors</a></li>
+</ul>
+</div>
 {% endblock %}
