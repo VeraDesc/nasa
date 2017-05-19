@@ -1,3 +1,8 @@
+
 from django.contrib import admin
 
-# Register your models here.
+from . import models
+
+admin.site.register(models.GeoTag)
+admin.site.register(models.MediaType)
+admin.site.register(models.Media)
