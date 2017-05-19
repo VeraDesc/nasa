@@ -1,9 +1,18 @@
 
 {% extends "layout/default.html" %}
 
+{% load staticfiles %}
+
 {% block header %}
-<link rel="stylesheet" href="/static/leaflet/leaflet.css" />
-<script src="/static/leaflet/leaflet-src.js"> </script>
+<link rel="stylesheet" href="{% static '/leaflet/leaflet.css' %}" />
+<script src="{% static '/leaflet/leaflet-src.js' %}"> </script>
+
+
+<link href="{% static '/videojs/video-js.min.css' %}" rel="stylesheet">
+<script src="{% static '/videojs/video.min.js' %}"></script>
+<script src="{% static '/videojs/Youtube.min.js' %}"></script>
+
+<script src="{% static '/videojs/player.js' %}"></script>
 {% endblock %}
 
 
@@ -20,10 +29,10 @@
 
 
   var mymap = L.map('mapid').setView([30.505, 20.0], 2);
-  
+
   L.tileLayer('https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=2ea36cc4bee644b49ec3886a52cd9e6d',{
-	  maxZoom: 18,
-	  minZoom: 2
+      maxZoom: 18,
+      minZoom: 2
   }).addTo(mymap);
 
  // L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -36,7 +45,9 @@
 
   marker1.on('click',forward);
   marker2.bindPopup(" <a href='http://de.wikipedia.org/wiki/Dublin'>Get some infos about Dublin by clicking this link</a> " )
-  
+
+  marker3.on('click',function () { jQuery('#player').videoPlayer() });
+
 </script>
 
 <div class="attribution">
@@ -44,5 +55,11 @@
 <li>Maps &copy; <a href="https://thunderforest.com">Thunderforest</a></li>
 <li>Data &copy; <a href="https://openstreetmap.org">OpenStreetMap contributors</a></li>
 </ul>
+</div>
+<div id="player">
+<a href="#close-player" class="close-img"></a>
+<video id="videojs" class="video-js vjs-default-skin zdvideoplayer"
+    controls autoplay
+    data-setup='{"techOrder":["youtube","html5"],"ytcontrols":false}'></video>
 </div>
 {% endblock %}

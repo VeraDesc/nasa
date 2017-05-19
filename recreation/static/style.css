@@ -2,25 +2,25 @@
 body {
   color: #000;
   font-size: 12pt;
-  font-family: Helvetica, Ubuntu, sans-serif; 
+  font-family: Helvetica, Ubuntu, sans-serif;
   background-color: #fff;
 }
 
 h1 {color: #000;
   font-size: 16pt;
   font-weight: bold;
-  font-family: Helvetica, Ubuntu, sans-serif; 
+  font-family: Helvetica, Ubuntu, sans-serif;
   padding-left: 20px;
-	}
-	
+    }
+
 a {
-	color: #000;
-	text-decoration: none;
-	}
-	
+    color: #000;
+    text-decoration: none;
+    }
+
 a:hover {
-	color: #00d400;
-	text-decoration: underline;
+    color: #00d400;
+    text-decoration: underline;
 }
 
 /* *********************
@@ -34,7 +34,7 @@ a:hover {
 /* *********************
  *         USER        *
  * *********************/
-.user {    
+.user {
     float: right;
     margin-right: 40%;
     margin-top: -2em;
@@ -43,9 +43,9 @@ a:hover {
  *         MENU        *
  * ******************* */
 #app-menu ul {
-	list-style: none;
-	display: inline;
-	}
+    list-style: none;
+    display: inline;
+    }
 
 #app-menu {
      position: relative;
@@ -68,4 +68,35 @@ a:hover {
 #app-menu:after {
      clear: both;
 }
-
+/* **********************
+ *        PLAYER        *
+ ************************/
+#player {
+    display: none;
+    background-color: #FFF;
+}
+#player a.close-img {
+    background: url(icons/x.png) no-repeat;
+    width: 25px;
+    height: 29px;
+    display: inline;
+    z-index: 3200;
+    position: absolute;
+    top: -15px;
+    right: -16px;
+    cursor: pointer;
+}
+#player iframe {
+    height: 100%;
+    width: 100%;
+}
+#player-overlay {
+    position: fixed;
+    z-index:1000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}

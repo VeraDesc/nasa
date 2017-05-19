@@ -4,13 +4,16 @@
 <head>
 {% include "chunks/favicon.html" %}
 
+<script src="{% static '/jquery/jquery-min.js' %}"></script>
+
+
 {% block header %}{% endblock %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
 
 </head>
 <body>
-	<div title>
+    <div title>
 {% include "chunks/top.html" %}
    </div>
    <div class="user">
@@ -18,7 +21,7 @@
    </div>
    <div class="menu">
 {% include "chunks/menu.html" %}
-	</div>
+    </div>
 
 <div id="content">
 {% block content %}{% endblock %}÷÷
