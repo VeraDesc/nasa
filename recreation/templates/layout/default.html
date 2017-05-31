@@ -13,6 +13,7 @@
 
 </head>
 <body>
+<div id="top">
     <div title>
 {% include "chunks/top.html" %}
    </div>
@@ -22,12 +23,12 @@
    <div class="menu">
 {% include "chunks/menu.html" %}
     </div>
-
+</div>
 <div id="content">
 {% block content %}{% endblock %}÷÷
 </div>
-
+<div id="bottom">
 {% include "chunks/footer.html" %}
-
+</div>
 </body>
 </html>
